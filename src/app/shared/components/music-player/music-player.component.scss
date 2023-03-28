@@ -1,0 +1,14 @@
+@import "../../shared.scss";
+
+#musicPlayer {
+  color: $text-color;
+  background-color: $accent-color;
+}
+#songInfo {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+#controlsWrapper {
+  height: 100px;
+}

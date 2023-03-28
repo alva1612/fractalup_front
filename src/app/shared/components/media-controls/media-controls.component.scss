@@ -1,0 +1,8 @@
+#mediaControls {
+  .icon {
+    font-size: 18pt;
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+}

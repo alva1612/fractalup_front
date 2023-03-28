@@ -1,0 +1,13 @@
+<div id="musicPlayer" *ngIf="playing" class="fixed bottom-0 left-0 right-0">
+  <div id="controlsWrapper" class="relative flex items-center justify-center">
+    <div id="songDetails" class="absolute flex items-center bottom-0 left-0">
+      <img src="" alt="" width="100" height="100" />
+      <div id="songInfo" class="flex flex-col">
+        <span>Cancion</span>
+        <span>Artista - Album</span>
+      </div>
+    </div>
+    <app-media-controls></app-media-controls>
+    <app-volume-control></app-volume-control>
+  </div>
+</div>
