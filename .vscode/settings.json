@@ -19,7 +19,7 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.color": "#2e000b",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "Angular.ng-template",
   "editor.formatOnSave": true,
   "prettier.semi": false
 }

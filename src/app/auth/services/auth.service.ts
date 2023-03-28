@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs';
 import { deezerLoginUrl } from 'src/app/constants/api.constants';
 import { LoginDto } from '../interfaces/auth.interfaces';
 
@@ -8,6 +9,8 @@ import { LoginDto } from '../interfaces/auth.interfaces';
 })
 export class AuthService {
   constructor(private readonly _http: HttpClient) {}
+
+  $isLoggedIn = of(false);
 
   login() {
     const params = new HttpParams()

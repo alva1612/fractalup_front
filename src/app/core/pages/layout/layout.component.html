@@ -1,3 +1,9 @@
-<app-side-menu></app-side-menu>
-<router-outlet></router-outlet>
-<app-music-player></app-music-player>
+<div id="layout" class="flex">
+  <app-side-menu></app-side-menu>
+  <div id="main" class="flex">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  </div>
+  <a [routerLink]="'auth'">log in</a>
+  <app-music-player></app-music-player>
+</div>

@@ -1,0 +1,19 @@
+@import "../../shared.scss";
+
+#menu {
+  position: fixed;
+  overflow: hidden;
+  max-height: 0px;
+  transition: all 0.2s ease-out;
+  background-color: $dark-red-secondary;
+  color: $text-color;
+  width: 100vw;
+}
+
+#menu.open {
+  max-height: 100vh;
+  transition: all 0.2s ease-in;
+}
+
+.close {
+}

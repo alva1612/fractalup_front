@@ -1,29 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PagesModule } from './pages/pages.module';
-import { Route, RouterModule } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
+import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-
-const routes: Route[] = [
-  {
-    path: '',
-    component: LoginComponent,
-  },
-  {
-    path: 'register',
-    component: RegisterComponent,
-  },
-];
+import { UserButtonComponent } from './components/user-button/user-button.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    RouterModule.forChild(routes),
-    CommonModule,
-    HttpClientModule,
-    PagesModule,
-  ],
+  declarations: [UserButtonComponent],
+  imports: [RouterModule, CommonModule, HttpClientModule],
+  exports: [UserButtonComponent],
 })
 export class AuthModule {}

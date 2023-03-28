@@ -9,6 +9,9 @@ import { MusicPlayerComponent } from './components/music-player/music-player.com
 import { MediaControlsComponent } from './components/media-controls/media-controls.component';
 import { PlayControlComponent } from './components/play-control/play-control.component';
 import { VolumeControlComponent } from './components/volume-control/volume-control.component';
+import { HeaderComponent } from './components/header/header.component';
+import { RouterModule } from '@angular/router';
+import { AuthModule } from '../auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -21,8 +24,9 @@ import { VolumeControlComponent } from './components/volume-control/volume-contr
     MediaControlsComponent,
     PlayControlComponent,
     VolumeControlComponent,
+    HeaderComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, AuthModule],
   exports: [
     SideMenuComponent,
     PlayerCardComponent,
@@ -30,6 +34,7 @@ import { VolumeControlComponent } from './components/volume-control/volume-contr
     UserInfoComponent,
     SearchBarComponent,
     MusicPlayerComponent,
+    HeaderComponent,
   ],
 })
 export class SharedModule {}

@@ -1,1 +1,19 @@
-<p>side-menu works!</p>
+<button (click)="toggleMenu()">Menu</button>
+
+<div id="menu" [ngClass]="{ 'open': menuOpen, 'close': !menuOpen }">
+  <div class="menu-group">
+    <h1>Mi Librería</h1>
+    <a [routerLink]="">Recientes</a>
+    <a [routerLink]="">Artistas</a>
+    <a [routerLink]="">Albums</a>
+    <a [routerLink]="">Canciones</a>
+    <a [routerLink]="">Estaciones</a>
+  </div>
+  <div class="menu-group">
+    <h1>Playlist</h1>
+    <a [routerLink]="">Metal</a>
+    <a [routerLink]="">Para bailar</a>
+    <a [routerLink]="">Rock 90s</a>
+    <a [routerLink]="">Baladas</a>
+  </div>
+</div>
