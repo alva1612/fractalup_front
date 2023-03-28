@@ -26,6 +26,6 @@ export class LoginComponent {
 
   onSubmit() {
     console.log('ey');
-    this._authService.login().subscribe();
+    this._authService.login().subscribe((res) => console.log(res));
   }
 }
