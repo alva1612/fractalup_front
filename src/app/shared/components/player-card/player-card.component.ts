@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PlayerCardComponent {
 
+  src: string = ""
+  name: string = "Nada"
 }

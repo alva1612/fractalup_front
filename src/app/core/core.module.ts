@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Route, RouterModule } from '@angular/router';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { PagesModule } from './pages/pages.module';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Route[] = [
   {
@@ -14,7 +15,7 @@ const routes: Route[] = [
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, RouterModule.forChild(routes), PagesModule],
+  imports: [CommonModule, RouterModule.forChild(routes), HttpClientModule,PagesModule],
   exports: [PagesModule],
 })
 export class CoreModule {}

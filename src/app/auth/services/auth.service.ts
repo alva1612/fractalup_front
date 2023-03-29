@@ -12,11 +12,13 @@ export class AuthService {
 
   $isLoggedIn = of(false);
 
+  $token = of("")
+
   login() {
     const params = new HttpParams()
       .set('perms', 'basic_access,email')
       .append('app_id', '592464')
-      .append('redirect_uri', 'https://fractalup.gobi.fun')
+      .append('redirect_uri', 'https://fractalup.gobi.fun/')
       .append('response_type', 'token');
     return this._http.get(deezerLoginUrl, { params });
   }
